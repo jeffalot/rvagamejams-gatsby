@@ -23,10 +23,6 @@ const Footer: React.FC<Props> = ({ siteData, theme }) => {
         faClass: 'fa-twitter',
         url: twitterUrl,
       },
-      {
-        faClass: 'fa-instagram',
-        url: instagramUrl,
-      },
     ]
 
     return socialMedias.map((socialMedia) => {
@@ -53,16 +49,6 @@ const Footer: React.FC<Props> = ({ siteData, theme }) => {
       <div className="container mx-auto text-gray-600 text-center my-2">{renderSocialMediaLinks()}</div>
       <p className="text-center text-gray-600">{footerLabel}</p>
       <p className="text-center text-gray-600">
-        Powered by{' '}
-        <OutboundLink
-          href="https://websheets.co"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:font-semibold underline"
-          onClick={() => gtagEventClick('click_footer_link', 'WebSheets link')}
-        >
-          WebSheets
-        </OutboundLink>
       </p>
     </div>
   )
