@@ -3,13 +3,13 @@ require('dotenv').config()
 /* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
   siteMetadata: {
-    title: 'WebSheets',
-    titleTemplate: '%s | WebSheets',
-    description: 'Create listing websites with Google Sheets data',
-    author: 'sohafidz',
-    url: 'https://websheets.co', // No trailing slash allowed!
+    title: 'RVA Game Jams',
+    titleTemplate: '%s',
+    description: '',
+    author: 'jeffalot',
+    url: 'https://rvagamejams.netlify.app', // No trailing slash allowed!
     image: '/app-banner.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: 'sohafidz',
+    twitterUsername: '',
   },
   plugins: [
     `gatsby-plugin-postcss`,
