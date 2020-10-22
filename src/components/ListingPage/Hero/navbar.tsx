@@ -13,8 +13,7 @@ interface Props {
 const Navbar: React.FC<Props> = ({ title, logo, theme, isDarkMode, heroType, handleDarkModeClick }) => {
   const darkModeIcon = isDarkMode ? 'fa-sun' : 'fa-moon'
 
-  const textColor =
-    heroType === HeroType.MINIMAL || heroType === HeroType.MINIMAL_CENTER ? `text-${theme.primary}` : `text-gray-100`
+  const textColor =  isDarkMode ? `text-gray-300` : `text-gray-800`
 
   const renderImage = () => {
     if (!!logo) {
@@ -31,7 +30,7 @@ const Navbar: React.FC<Props> = ({ title, logo, theme, isDarkMode, heroType, han
   }
 
   return (
-    <div>
+    <div className={`${theme.background}`}>
       {renderMinimalBar()}
       <nav className={`container mx-auto py-8 flex`}>
         <div className="px-4 flex items-center">
